@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/*Fonts*/
+@font-face {
+    font-family: 'PixelMplus12-Regular';
+    src: url('fonts/PixelMplus12-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'x10y12pxDonguriDuel';
+    src: url('fonts/x10y12pxDonguriDuel.ttf') format('truetype');
+    font-display: swap;
+}
+
+body{
+    margin: 0;
+    padding: 40px 0; 
+    font-family: segoe UI, sans-serif;
+    background: linear-gradient(to bottom, #8784D5/*#4facfe*/,#4facfe, #87f9ff/*#00f2fe*/);   /*背景*/
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+}
+
+.page-center{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;    
+}
+
+.container{
+    background-color: white;
+    width: 360px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'x10y12pxDonguriDuel', Courier, monospace;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'PixelMplus12-Regular', Courier, monospace; 
+}
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #af313e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-family: 'x10y12pxDonguriDuel', Courier, monospace;
+}
+
+button:hover{
+    background-color: #76232b;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'x10y12pxDonguriDuel', Courier, monospace;
+}
+
+.city-list{
+    margin-top: 40px;
+    padding: 20px;
+    background: #f5f7fa;
+    border-radius: 8px;
+}
+
+.city-list2{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.city-list table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.city-list th{
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    color: white
+}
+
+.city-list td{
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.city-list th {
+    font-size: 16px;
+    font-family: 'x10y12pxDonguriDuel', Courier, monospace;
+    font-weight: normal;
+    background-color: #af313e;
+    padding: 8px;
+    text-align: left;
+    color: white;
+}
+
+.city-list h2 {
+    font-family: 'x10y12pxDonguriDuel', Courier, monospace;
+}
+
+.city-list tbody{
+    font-family: 'PixelMplus12-Regular', Courier, monospace;
+}
+
+.youtube-section {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'x10y12pxDonguriDuel', Courier, monospace;
+}
+
+.youtube-section iframe {
+    max-width: 100%;
+    height: 315px;
+}
